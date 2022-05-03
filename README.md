@@ -4,25 +4,9 @@ Twitter Scraping Example
 Twitter query syntax documented here: https://github.com/igorbrigadir/twitter-advanced-search
 
 Tweets are returned as snscrape.modules.twitter.Tweet objects.
-Tweet objects are structs with the following fields:
-    -url (str)
-    -date (dt.datetime)
-    -content (str)
-    -renderedContent (str)
-    -id (int)
-    -user (snscrape.modules.twitter.User)
-    -replyCount (int)
-    -retweetCount (int)
-    -likeCount (int)
-    -quoteCount (int)
-    -conversationId (int)
-    -hashtags (list[str])
-    -lang (str)
-    -source (str)
-    -sourceUrl (str)
-    -sourceLabel (str)
-    -media (list[snscrape.modules.twitter.Media])
-    
+
+
+Example:
     ```
     from twitter_scrape import get_tweets
     def main():
