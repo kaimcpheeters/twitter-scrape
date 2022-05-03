@@ -5,8 +5,6 @@ Twitter query syntax documented here: https://github.com/igorbrigadir/twitter-ad
 
 Tweets are returned as snscrape.modules.twitter.Tweet objects.
 
-
-Example:
     ```
     from twitter_scrape import get_tweets
     def main():
