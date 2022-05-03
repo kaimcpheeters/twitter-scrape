@@ -2,6 +2,7 @@ import datetime as dt
 from snscrape.modules.twitter import TwitterSearchScraper
 
 """
+
 Twitter query syntax documented here: https://github.com/igorbrigadir/twitter-advanced-search
 
 Tweets are returned as snscrape.modules.twitter.Tweet objects.
@@ -25,6 +26,7 @@ Tweet objects are structs with the following fields:
     -media (list[snscrape.modules.twitter.Media])
 """
 
+
 def get_tweets(query, since_time, until_time, limit=100):
     """
     query (str): a query as documented here https://github.com/igorbrigadir/twitter-advanced-search
@@ -40,6 +42,7 @@ def get_tweets(query, since_time, until_time, limit=100):
         if count == limit:
             break
 
+            
 def get_tweet(tweet_id):
     """tweet_id (str): snowflake id of a tweet - 64 bit int"""
     since_id = int(tweet_id) - 1
@@ -56,5 +59,6 @@ def example():
     for tweet in tweets:
         print(f"{tweet.user.username} tweeted \n {tweet.content} \n")
 
+        
 if __name__ == "__main__":
     example()
